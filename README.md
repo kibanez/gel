@@ -1,4 +1,4 @@
-exemplary run of repeat crawler script on a list of Expansion hunter BAMlet files:
+Exemplary run of repeat crawler script on a list of Expansion hunter BAMlet files:
 
 ```
 python find_regex_genotypes.py --bam_files list_of_expansion_hunter_bamlets.txt --output THAP11_RC.tsv --span 0-2 --gene THAP11 \
