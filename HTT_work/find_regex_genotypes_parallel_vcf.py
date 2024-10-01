@@ -5,7 +5,6 @@ import sys
 import os
 import pandas as pd
 import numpy as np
-import multiprocessing
 import argparse
 # create dictionary with a regex for all possible genotypes of each of the HTT locus components
 components={
