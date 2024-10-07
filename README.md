@@ -9,8 +9,7 @@ Briefly, Expansion Hunter outputs a BAM file which contains the reads from a loc
 Repeat Crawler accepts a list of repeat component structures (specified in a JSON input file) "crawls" along each read in an EH BAMlet (small BAM) file and documents the presence/absence and length of each component in the order that they are arranged in the input JSON file. NOTE the phrase "crawls" is used to convey that the program goes from each individual repeat component to the next as it makes it's way along a read. 
 Subsequently, it tallies the number of found structures across all reads and finds the 2 most common and reports them as the first and second alleles which were then assigned to the EH allele lengths (matched by adding the total length of the repeat components and comparing to the EH repeat sizes).
 
-
-## Installation
+## Installation
 
 The following versions have been used:
 - python v3.7
