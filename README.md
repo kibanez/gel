@@ -10,14 +10,28 @@ Repeat Crawler accepts a list of repeat component structures (specified in a JSO
 Subsequently, it tallies the number of found structures across all reads and finds the 2 most common and reports them as the first and second alleles which were then assigned to the EH allele lengths (matched by adding the total length of the repeat components and comparing to the EH repeat sizes).
 
 ## Installation
+
+The following versions have been used:
+- python v3.7
+- R v4.02
+
 ## Local installation using .venv
+
+First, clone the repository, go to `gel` folder and run `make`. This will create a virtual environment called `.venv`.
+Run `make install` afterwards to install all dependencies.
+
+Once we installed all required libraries, we activate the virtual environment:
+
+```
+source .venv/bin/activate
+```
 
 # Usage
 To run Repeat Crawler on a list of EH BAMlet files:
 
 ```
 python RC_latest.py --bam_files list_of_expansion_hunter_bamlet.txt --output THAP11_RC.tsv --span 0-2 --gene THAP11 \
-    --count CAG1 CAA1 CAG2 CAA2 CAG3 CAA3 CAG4 CAA4 CAG5 CAA5 CAG6 CAA6 CAG7 --json THAP11_structure.json \
-    --must_contain CAG1
+--count CAG1 CAA1 CAG2 CAA2 CAG3 CAA3 CAG4 CAA4 CAG5 CAA5 CAG6 CAA6 CAG7 --json THAP11_structure.json \
+--must_contain CAG1
 ```
 
